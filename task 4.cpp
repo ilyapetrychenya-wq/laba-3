@@ -8,11 +8,13 @@ int main()
     cin >> w1;
     cout << "Введите номер дня (1-7): ";
     cin >> d;
-    for (int w = 1; w <= w1; ++1) {
-        for (int d1 = 1; d1 <= 7; ++d1) {
-            cout << w << "-" << d1 << "\n";
+    if (d >= 1 && d <= 7 && w1 >= 1 && w1 <= 7)
+    {
+        for (int w = 1; w <= w1; ++1) {
+            for (int d1 = 1; d1 <= 7; ++d1) {
+                cout << w << "-" << d1 << "\n";
+            }
         }
     }
-
-    return 0;
+    else cout << "Ошибка";
 }
